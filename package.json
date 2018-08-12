@@ -2,9 +2,8 @@
     "name": "hello-world",
     "version": "1.0.0",
     "scripts": {
-        "start": "beefy index.js:bundle.js --cwd=dist --debug=false -- --fast",
-        "build": "browserify index.js -o dist/bundle.js",
-        "deploy": "npm run build && gh-pages -d dist/"
+        "start": "beefy index.js:bundle.js --debug=false -- --fast",
+        "build": "browserify index.js -o bundle.js"
     },
     "dependencies": {
         "voxel-hello-world": "^0.6.0"
@@ -17,6 +16,7 @@
     },
     "homepage": "https://BuptStEve.github.io",
     "devDependencies": {
-        "gh-pages": "^1.2.0"
+        "beefy": "^2.1.8",
+        "browserify": "^16.2.2"
     }
 }

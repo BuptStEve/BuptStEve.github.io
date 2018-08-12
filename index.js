@@ -5,7 +5,7 @@ var urls = {
     "zhihu": "https://www.zhihu.com/people/stevesasuke/activities",
     "sf": "https://segmentfault.com/u/buptsteve",
     "juejin": "https://juejin.im/user/59226162570c350069b8ce42",
-    "tua": "https://tuateam.github.io/tua-mp/",
+    "tua": "https://tuateam.github.io/tua-mp",
 }
 
 var slides = Object.keys(urls)
