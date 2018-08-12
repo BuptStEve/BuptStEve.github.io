@@ -1,0 +1,22 @@
+{
+    "name": "hello-world",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "beefy index.js:bundle.js --cwd=dist --debug=false -- --fast",
+        "build": "browserify index.js -o dist/bundle.js",
+        "deploy": "npm run build && gh-pages -d dist/"
+    },
+    "dependencies": {
+        "voxel-hello-world": "^0.6.0"
+    },
+    "author": "StEve Young",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BuptStEve/BuptStEve.github.io.git"
+    },
+    "homepage": "https://BuptStEve.github.io",
+    "devDependencies": {
+        "gh-pages": "^1.2.0"
+    }
+}
