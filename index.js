@@ -1,19 +1,24 @@
+var mobileRe = /mobile/i
 var urls = {
-    "github": "https://github.com/BuptStEve",
-    "blog": "https://buptsteve.github.io/blog/",
-    "fp": "https://slides.com/yangzhenyu/functional-programming-in-javascript/",
-    "zhihu": "https://www.zhihu.com/people/stevesasuke/activities",
-    "sf": "https://segmentfault.com/u/buptsteve",
-    "juejin": "https://juejin.im/user/59226162570c350069b8ce42",
-    "tua": "https://tuateam.github.io/tua-mp",
+    'github': 'https://github.com/BuptStEve',
+    'blog': 'https://buptsteve.github.io/blog/',
+    'fp': 'https://slides.com/yangzhenyu/functional-programming-in-javascript/',
+    'zhihu': 'https://www.zhihu.com/people/stevesasuke/activities',
+    'sf': 'https://segmentfault.com/u/buptsteve',
+    'juejin': 'https://juejin.im/user/59226162570c350069b8ce42',
+    'tua': 'https://tuateam.github.io/tua-mp',
+}
+
+if (mobileRe.test(navigator.userAgent)) {
+    window.location.href = urls.blog
 }
 
 var slides = Object.keys(urls)
 
 var game = require('voxel-hello-world')({
-    texturePath: "./images/",
-    playerSkin: "./images/player.png",
-    materials: ["yellow"].concat(slides),
+    texturePath: './images/',
+    playerSkin: './images/player.png',
+    materials: ['yellow'].concat(slides),
     materialFlatColor: false,
     generateVoxelChunks: false,
     chunkDistance: 1,
